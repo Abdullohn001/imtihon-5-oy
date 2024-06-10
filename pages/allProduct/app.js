@@ -1,6 +1,5 @@
 const temp = document.querySelector("template");
 const ul = document.querySelector("ul");
-const form = document.querySelector("form");
 
 
 
@@ -16,12 +15,10 @@ const updateUI = (products) => {
     const para = clone.querySelector("p");
     const span = clone.querySelector("span");
     const heart = clone.querySelector("#heart");
-    const addCart = clone.getElementById("add-cart");
     const cartNumber = document.getElementById("cart-number");
     const cards = clone.getElementById("cards");
     const numberOfDiscount = clone.getElementById("numberOfDiscount");
     const starRating = clone.getElementById("star-rating");
-    const star = clone.getElementById("star");
 
     let counter = 0;
 
@@ -51,11 +48,7 @@ const updateUI = (products) => {
     heart.addEventListener("click", () => {
       heart.classList.toggle("red");
     });
-    addCart.addEventListener("click", () => {
-      counter += 1;
-      console.log(counter);
-      cartNumber.textContent = counter;
-    });
+   
 
     const bosish = () => {
       a.click();
