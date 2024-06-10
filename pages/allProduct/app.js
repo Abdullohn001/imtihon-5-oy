@@ -16,6 +16,7 @@ const updateUI = (products) => {
     const para = clone.querySelector("p");
     const span = clone.querySelector("span");
     const heart = clone.querySelector("#heart");
+    const addCart = clone.getElementById("add-cart");
     const cartNumber = document.getElementById("cart-number");
     const cards = clone.getElementById("cards");
     const numberOfDiscount = clone.getElementById("numberOfDiscount");
