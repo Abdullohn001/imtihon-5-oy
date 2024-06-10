@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="../../src/output.css" />
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="about.css" />
+  </head>
+  <body class="scroll-smooth">
+    <!-- NAVBAR -->
+    <div
+      class="w-full h-14 rounded-md bg-slate-100 flex justify-between items-center px-1 sticky top-0 z-10 mb-10"
+    >
+      <a class="cursor-pointer ml-20" href="../../index.html">
+        <span class="text-2xl fontp text-info font-serif">BREND</span>
+        <span class="text-zinc-700">shop</span>
+      </a>
+
+      <div class="flex gap-16 mr-[100px]">
+        <a
+          class="cursor-pointer fontp hover:text-info active:opacity-50"
+          href="../../index.html"
+          >Home</a
+        >
+        <a
+          class="cursor-pointer hover:text-info active:opacity-50"
+          href="../allProduct/product.html"
+          >All Products</a
+        >
+        <a
+          class="cursor-pointer hover:text-info active:opacity-50"
+          href="../../index.html"
+          >Contact</a
+        >
+        <a
+          class="cursor-pointer hover:text-info active:opacity-50"
+          href="../../index.html"
+          >Sandals</a
+        >
+      </div>
+    </div>
+
+    <div class="img carousel w-[200px]">
+      <div id="item1" class="carousel-item flex justify-center w-full">
+        <img id="img1" src="" class="w-[200px]" />
+      </div>
+      <div id="item2" class="carousel-item flex justify-center w-full">
+        <img id="img2" src="" class="w-[200px]" />
+      </div>
+      <div id="item3" class="carousel-item flex justify-center w-full">
+        <img id="img3" src="" class="w-[200px]" />
+      </div>
+    </div>
+
+    <div class="w-[500px] text">
+      <h1 class="text-6xl font-semibold text-green-700">About Product</h1>
+
+      <h1 class="text-2xl text-blue-700" id="brend"></h1>
+      <p id="wariant" class="font-mono mt-[50px] font-semibold"></p>
+      <h3 id="description" class="w-full md:w-1/2"></h3>
+      <p id="stock" class="text-slate-700 mt-[50px]"></p>
+    </div>
+
+    <div class="flex ml-[200px] w-full py-2 gap-2 mb-5">
+      <a href="#item1" class="btn btn-xs">1</a>
+      <a href="#item2" class="btn btn-xs">2</a>
+      <a href="#item3" class="btn btn-xs">3</a>
+    </div>
+
+    <!-- overlay -->
+    <div
+      id="overlay"
+      class="absolute flex justify-center items-center top-0 left-0 blur-0 w-full bg-black bg-opacity-50 h-lvh backdrop-blur-sm hidden"
+    >
+      <span class="loading loading-spinner loading-lg text-white"></span>
+    </div>
+    <script src="./about.js"></script>
+  </body>
+</html>
